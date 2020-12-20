@@ -49,7 +49,7 @@
         <h1 class="target">Эффективные решения <p>для вашего бизнеса</p></h1>
     </div>
         <div class="container_btn">        
-        <button class="modal_btn" type="button">Заказать услугу</button>  
+        <button class="modal_btn" type="button" data-modal-open>Заказать услугу</button>  
 </div>
 </section>
 <!-- about -->
@@ -99,13 +99,22 @@
     <h2 class="our_work">Чем мы занимаемся</h2>
 <div class="what_we_do">
     <ul class="we_do">
-        <li class="we_do_item">
+        <li class="we_do_item">  
+            <div class="software">
+                <div class="software_name">Десктопные приложения</div>
+            </div>
             <img src="./images/img_work/tablet.jpg" alt="typing" width="370" height="294">
         </li>
         <li class="we_do_item">
+            <div class="software">
+                <div class="software_name">Мобильные приложения</div>
+            </div>
             <img src="./images/img_work/phone_hand.jpg" alt="phone in hand" width="370" height="294">
         </li>
         <li class="we_do_item">
+            <div class="software">
+                <div class="software_name">Дизайнерские решения</div>
+            </div>
             <img src="./images/img_work/tablet_in_hand.jpg" alt="tablet in hand" width="370" height="294">
         </li>
     </ul>
@@ -380,8 +389,14 @@
 </div>
 </footer>
 
-<div class="backdrop">
-   <div class="modal"></div>
+<div class="backdrop" data-modal>
+   <div class="modal">
+       <button type="button" class="close-btn" data-modal-close>
+          <svg class="icon_close"> <use href="./images/close.svg#icon-close-black-18dp-2-1" > </use> </svg> 
+       </button>
+   </div>
 </div>
+
+<script src="./js/modal.js"></script>
  </body> 
 </html>
